@@ -1,13 +1,13 @@
 #include "sort.h"
 
 /**
- * swap - swaps 2 nodes in a doubly-linked list
+ * swap_list - swaps 2 nodes in a doubly-linked list
  * @x: address of first node
  * @y: address of second node
  *
  * Return: void
  */
-void swap(listint_t *x, listint_t *y)
+void swap_list(listint_t *x, listint_t *y)
 {
 	if (x->prev)
 		x->prev->next = y;
@@ -40,7 +40,7 @@ void insertion_sort_list(listint_t **list)
 		{
 			if (m->prev->n > m->n)
 			{
-				swap(m->prev, m);
+				swap_list(m->prev, m);
 				if (!m->prev)
 					*list = m;
 				print_list((const listint_t *)*list);

@@ -28,7 +28,7 @@ void swap(int *array, size_t size, int *x, int *y);
 size_t lomuto_partition(int *array, size_t size, ssize_t low, ssize_t high);
 void bubble_sort(int *array, size_t n);
 void insertion_sort_list(listint_t **list);
-void swap(listint_t *x, listint_t *y);
+void swap_list(listint_t *x, listint_t *y);
 void selection_sort(int *array, size_t n);
 
 #endif
